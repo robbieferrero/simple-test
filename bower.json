@@ -1,0 +1,25 @@
+{
+  "name": "hangtest",
+  "version": "0.0.0",
+  "authors": [
+    "Robbie Ferrero <robbieferrero@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.21",
+    "angular-mocks": "~1.2.21"
+  }
+}

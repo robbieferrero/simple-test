@@ -1,0 +1,25 @@
+{
+  "name": "hangtest",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.2.19",
+    "gulp": "^3.8.6",
+    "gulp-karma": "0.0.4",
+    "karma": "^0.12.19",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-coverage": "^0.2.5",
+    "karma-mocha": "^0.1.6",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sinon": "^1.0.3",
+    "mocha": "^1.21.3",
+    "sinon": "^1.10.3"
+  }
+}
