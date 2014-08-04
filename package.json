@@ -4,7 +4,7 @@
   "description": "A simple test scaffold",
   "main": "index.js",
   "scripts": {
-    "test": "bower install && gulp test"
+    "test": "gulp test"
   },
   "author": "",
   "license": "ISC",
