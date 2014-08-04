@@ -3,11 +3,10 @@ var karma = require('gulp-karma');
 var concat = require('gulp-concat');
 var mainBowerFiles = require('main-bower-files');
 
-var testFiles = [
-	'js/*.js',
-	'test/*.js'
-];
-testFiles = mainBowerFiles().concat(testFiles);
+var testFiles = mainBowerFiles().concat([
+  'js/*.js',
+  'test/*.js'
+]);
 
 
 gulp.task('test', function() {
