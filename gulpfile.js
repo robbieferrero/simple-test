@@ -1,12 +1,14 @@
 var gulp = require('gulp');
 var karma = require('gulp-karma');
+var concat = require('gulp-concat');
+var mainBowerFiles = require('main-bower-files');
 
 var testFiles = [
-	'bower_components/angular/angular.min.js',
-	'bower_components/angular-mocks/angular-mocks.js',
 	'js/*.js',
 	'test/*.js'
 ];
+testFiles = mainBowerFiles().concat(testFiles);
+
 
 gulp.task('test', function() {
   return gulp.src(testFiles)

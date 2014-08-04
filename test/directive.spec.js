@@ -1,34 +1,29 @@
-describe('app haThing', function() {
+describe('app simpleThing', function() {
 	var element;
 	var $scope;
 	beforeEach(module('app'));
 	beforeEach(inject(function($compile, $rootScope) {
 		$scope = $rootScope;
-		element = angular.element('<div ha-thing>{{2 + 2}}</div>');
+		element = angular.element('<div simple-thing></div>');
 		$compile(element)($rootScope);
 	}));
-
-	it('should equal 4', function() {
-		$scope.$digest();
-		expect(element.html()).to.equal('4');
-	});
 	it('should have class test', function() {
 		expect(element.hasClass('test')).to.be.true;
 	});
-	it('should toggle class thing to element', function() {
-		$scope.thing();
-		expect(element.hasClass('thing')).to.be.true;
-		$scope.thing();
-		expect(element.hasClass('thing')).to.be.false;
+	it('should toggle class test2 to element', function() {
+		$scope.toggle();
+		expect(element.hasClass('test2')).to.be.true;
+		$scope.toggle();
+		expect(element.hasClass('test2')).to.be.false;
 	});
 });
 
-describe('app haCtrl', function() {
+describe('app simpleCtrl', function() {
 	var scope, ctrl;
 	beforeEach(module('app'));
 	beforeEach(inject(function($rootScope, $controller) {
 		scope = $rootScope.$new();
-		ctrl = $controller('haCtrl', {$scope: scope});
+		ctrl = $controller('simpleCtrl', {$scope: scope});
 	}));
 	it('controller should have test array', function() {
 		scope.$digest();
@@ -45,13 +40,13 @@ describe('app haCtrl', function() {
 	})
 });
 
-describe('app haFactory', function() {
-	var haFactory;
+describe('app simpleFactory', function() {
+	var simpleFactory;
 	beforeEach(module('app'));
-	beforeEach(inject(function(_haFactory_) {
-		haFactory = _haFactory_;
+	beforeEach(inject(function(_simpleFactory_) {
+		simpleFactory = _simpleFactory_;
 	}));
 	it('should return hello world', function() {
-		expect(haFactory.helloWorld()).to.equal('Hello World!');
+		expect(simpleFactory.helloWorld()).to.equal('Hello World!');
 	})
 })
