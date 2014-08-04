@@ -1,7 +1,7 @@
 module.exports = function(config) {
     config.set({
         frameworks: ['mocha', 'chai'],
-        browsers: ['PhantomJS', 'Chrome'],
+        browsers: ['PhantomJS'],
         reporters: ['progress', 'coverage'],
         basePath: '',
         exclude: [],
