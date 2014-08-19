@@ -6,8 +6,7 @@
   "scripts": {
     "test": "bower install && gulp test"
   },
-  "bin": 
-  "author": "",
+  "author": "Robbie Ferrero",
   "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.2.19",
