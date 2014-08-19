@@ -4,7 +4,7 @@
   "description": "A simple test scaffold",
   "main": "index.js",
   "scripts": {
-    "test": "bower install && gulp test"
+    "test": "npm install -g bower && bower install && gulp test"
   },
   "author": "Robbie Ferrero",
   "license": "ISC",
